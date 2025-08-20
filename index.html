@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BikeGo - E-Bike Rentals</title>
+    
+    <!-- PWA Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00B894" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-green': '#00B894',
+              'brand-dark': '#1E293B',
+              'brand-light': '#F1F5F9',
+              'brand-dark-secondary': '#334155',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+      /* Global styles for smoother interactions */
+      button, a, [role="button"], .cursor-pointer {
+        -webkit-tap-highlight-color: transparent;
+        transition: all 0.2s ease-in-out;
+      }
+      button:active, [role="button"]:active {
+        transform: scale(0.95);
+        opacity: 0.9;
+      }
+    </style>
+    <!-- 
+      IMPORTANT: Google Maps API Key
+      The previous API key was causing a critical 'InvalidKeyMapError' from Google.
+      This error means the key is incorrect, has been disabled, or is restricted.
+
+      To fix this, you MUST replace 'YOUR_GOOGLE_MAPS_API_KEY_HERE' below with your own valid key.
+
+      How to get a key:
+      1. Go to the Google Cloud Console: https://console.cloud.google.com/
+      2. Create a project and enable the "Maps JavaScript API" and "Places API".
+      3. Create an API key.
+      4. IMPORTANT: For security, restrict your key to your website's domain to prevent unauthorized use.
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnP9g7AbACHApNb9HLmpP_bYJ9_Yd5Nls&libraries=places"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@^18.2.0/client",
+    "@react-google-maps/api": "https://esm.sh/@react-google-maps/api@2.19.3",
+    "react/": "https://esm.sh/react@^18.2.0/",
+    "react-dom/": "https://esm.sh/react-dom@^18.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="h-full antialiased bg-brand-light dark:bg-brand-dark">
+    <div id="root" class="h-full"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+</body>
+</html>

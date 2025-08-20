@@ -1,0 +1,8 @@
+{
+  "name": "BikeGo - E-Bike Rentals for Bangladesh",
+  "description": "A web-based prototype of BikeGo, an e-bike rental service designed for the streets of Bangladesh. Discover, unlock, and ride e-bikes with ease.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

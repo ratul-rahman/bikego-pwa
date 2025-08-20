@@ -1,0 +1,18 @@
+{
+  "name": "BikeGo - E-Bike Rentals",
+  "short_name": "BikeGo",
+  "description": "A web-based prototype of BikeGo, an e-bike rental service designed for the streets of Bangladesh. Discover, unlock, and ride e-bikes with ease.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F1F5F9",
+  "theme_color": "#00B894",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
