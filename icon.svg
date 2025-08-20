@@ -1,0 +1,36 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D9488;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main bike frame -->
+  <path d="M30 55 L40 35 L55 35 L70 55" stroke="url(#tealGradient)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Seat post and seat -->
+  <line x1="40" y1="35" x2="40" y2="28" stroke="url(#tealGradient)" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="37" y1="28" x2="43" y2="28" stroke="url(#tealGradient)" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Handlebar stem and bars -->
+  <line x1="55" y1="35" x2="55" y2="28" stroke="url(#tealGradient)" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="51" y1="28" x2="59" y2="28" stroke="url(#tealGradient)" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Back wheel -->
+  <circle cx="30" cy="55" r="8" stroke="url(#tealGradient)" stroke-width="2.5" fill="none"/>
+  
+  <!-- Front wheel -->
+  <circle cx="70" cy="55" r="8" stroke="url(#tealGradient)" stroke-width="2.5" fill="none"/>
+  
+  <!-- Electric battery pack (minimal rectangle on frame) -->
+  <rect x="45" y="38" width="8" height="12" rx="2" fill="url(#tealGradient)" opacity="0.8"/>
+  
+  <!-- Subtle tech element - small lightning bolt -->
+  <path d="M48 42 L50 40 L49 43 L51 41" stroke="white" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Motion lines for "go" concept -->
+  <line x1="80" y1="45" x2="87" y2="45" stroke="url(#tealGradient)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="82" y1="50" x2="87" y2="50" stroke="url(#tealGradient)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="84" y1="55" x2="87" y2="55" stroke="url(#tealGradient)" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+</svg>
