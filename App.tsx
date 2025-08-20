@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import type { AppState, Bike, RideDetails, LatLng, BikeWithDistance, ModalContent, PastRide } from './types';
@@ -450,7 +451,7 @@ const App: React.FC = () => {
                         <h3 className="font-semibold text-brand-dark dark:text-brand-light mb-2">Enter Promo Code</h3>
                         <div className="flex gap-2">
                             <input type="text" placeholder="e.g., RIDE50" className="flex-grow p-3 bg-gray-100 dark:bg-gray-700 rounded-lg focus:ring-2 focus:ring-brand-green focus:outline-none text-brand-dark dark:text-brand-light" />
-                            <button className="bg-brand-green text-white font-bold px-6 rounded-lg hover:bg-green-500">Apply</button>
+                            <button className="bg-brand-green text-white font-bold px-6 py-3 rounded-lg hover:bg-green-500 flex-shrink-0">Apply</button>
                         </div>
                     </div>
                     <div>
